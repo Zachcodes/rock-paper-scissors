@@ -4,10 +4,43 @@
     <meta charset="utf-8">
     <title>Rock Paper Scissors</title>
     <script type="text/javascript" src="index.js">
-
     </script>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-
+<div class="main-container">
+  <div class="choice-box">
+    <div class="title-box">
+      <h2>Human</h2>
+    </div>
+    <div class="choice-button-row" id="choice-button-row-human">
+      <button class="choice-button choice-button-rock" onclick="makeChoice(this)" id="human-button-rock"></button>
+      <button class="choice-button choice-button-paper" onclick="makeChoice(this)" id="human-button-paper"></button>
+      <button class="choice-button choice-button-scissors" onclick="makeChoice(this)" id="human-button-scissors"></button>
+    </div>
+  </div>
+  <div class="outcome-box">
+    <div class="title-box">
+      <h2>Rock Paper Scissors</h2>
+    </div>
+    <div class="winner-box">
+      Winner is: <input type="text" value="" id="winner-input"></input>
+    </div>
+    <div class="score-box">
+      Human: <input type="text" value="0" id="human-score"></input>
+      Computer: <input type="text" value="0" id='computer-score'></input>
+    </div>
+  </div>
+  <div class="choice-box">
+    <div class="title-box">
+      <h2>Computer</h2>
+    </div>
+    <div class="choice-button-row" id="choice-button-row-computer">
+      <button class="choice-button choice-button-rock" disabled id="computer-button-rock"></button>
+      <button class="choice-button choice-button-paper" disabled id="computer-button-paper"></button>
+      <button class="choice-button choice-button-scissors" disabled id="computer-button-scissors"></button>
+    </div>
+  </div>
+</div>
   </body>
 </html>

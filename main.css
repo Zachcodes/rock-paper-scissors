@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('./images/table-top.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.choice-box {
+  width: 30%;
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.outcome-box {
+  width: 30%;
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.choice-button {
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 12px;
+  width: 160px;
+  height: 100px;
+}
+.choice-button-rock {
+  background-image: url('./images/rock.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.choice-button-paper {
+  background-image: url('./images/paper.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.choice-button-scissors {
+  background-image: url('./images/scissors.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.focused-choice {
+  box-shadow: inset 0 0 0 1000px rgba(9, 5, 239, 0.35);
+}
+.title-box {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  background-color: #00000073;
+  color: white;
+}
+.choice-button-row {
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.winner-box {
+  height: 30%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+.score-box {
+  height: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#winner-input {
+  margin-left: 3px;
+}
